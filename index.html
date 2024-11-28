@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Gadgets - Home</title>
+  <link rel="stylesheet" href="it.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="LOGO.png" alt="ICT Gadgets Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <section class="hero">
+      <h1>Welcome to ICT Gadgets</h1>
+      <p>Your trusted source for high-quality computer and IT gadgets in Australia.</p>
+    </section>
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Wide range of products</li>
+        <li>Fast delivery</li>
+        <li>Excellent customer support</li>
+      </ul>
+    </section>
+    <section class="interactive-section">
+      <button id="myButton">Click me!</button>
+      <p id="hiddenContent" style="display: none;">Thanks.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 ICT Gadgets. All rights reserved. Designed by GRANT</p>
+  </footer>
+  <script>
+    var myButton = document.getElementById('myButton');
+    function showContent() {
+      var hiddenContent = document.getElementById('hiddenContent');
+      hiddenContent.style.display = 'block';
+    }
+    myButton.addEventListener('click', showContent);
+  </script>
+</body>
+</html>
