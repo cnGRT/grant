@@ -1,210 +1,239 @@
-/* Grant */
+/* Grant 
+Gao Yiheng*/
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  /* Header Styles */
-  header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-  }
-  
-  header .logo {
-    float: left;
-    padding-top: 10px;
-    width: 100px; /* 调整Logo大小 */
-    height: 60px; /* 调整Logo大小 */
-  }
-  
-  header nav {
-    float: right;
-    padding-top: 10px;
-  }
-  
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  header nav ul li a {
-    color: #af5757;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  
-  header nav ul li a:hover {
-    color: #cccccc;
-  }
- 
-  
-  #myButton {
-    position: absolute;
-    top: 10px; /* 距离顶部的距离 */
-    left: 10px; /* 距离左侧的距离 */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  /* Main Styles */
-  .hero {
-    
-    color: #ffffff;
-    height: 100px;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #000000; /* 文字颜色变为黑色 */
-  }
-  
-  .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #000000; /* 文字颜色变为黑色 */
-  }
-  
-  .features {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .features h2 {
-    margin-bottom: 20px;
-  }
-  
-  .features ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .features ul li {
-    margin-bottom: 10px;
-  }
-  
-  .support-flowchart img.center-image {
-    display: block;
-    margin: auto;
-    max-width: 50%;
-    height: auto;
-  }
- 
- 
-  .product-gallery h2 {
-    text-align: center;
-    
-  }
-  
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
- 
-  .product-item {
-    margin-bottom: 60px; 
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-item:hover {
-    transform: translateY(-5px);
-  } 
-  .product-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
- 
-  }
-  
-  .product-item p {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .product-item h1 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 10px 0 0;
-    text-align: center;
-    line-height: 1.5; /* 可以根据实际需要调整行高 */
-  }
-  .about-us, .location-map, .contact-details {
-    padding: 20px;
-  }
-  
-  .location-map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-  }
-  
-  .blog-posts {
-    padding: 20px;
-  }
-  
-  .blog-posts h2 {
-    margin-bottom: 20px;
-  }
-  
-  .blog-posts article {
-    margin-bottom: 20px;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header .logo {
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header .logo {
+  float: left;
+  padding-top: 10px;
+  width: 100px; /* Resize the logo */
+  height: 60px; 
+}
+
+header nav {
+  float: right;
+  padding-top: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #af5757;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  color: #cccccc;
+}
+
+#myButton {
+  position: absolute;
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
+}
+
+.product-table {
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #35424a;
+  color: white;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.product-table img {
+  max-width: 100px; /* Adjust the size of the images */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the images within their cells */
+}
+
+/* Main Styles */
+.hero {
+  color: #ffffff;
+  height: 100px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000; /* The text color changes to black */
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.features {
+  padding: 10px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+}
+
+.support-flowchart img.center-image {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.product-gallery h2 {
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  margin-bottom: 60px; 
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+} 
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-item p {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-item h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 0;
+  text-align: center;
+  line-height: 1.5; /* The row height can be adjusted according to actual needs */
+}
+
+.about-us, .location-map, .contact-details {
+  padding: 20px;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.blog-posts {
+  padding: 20px;
+}
+
+.blog-posts h2 {
+  margin-bottom: 20px;
+}
+
+.blog-posts article {
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px; /* Add some padding */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Increase the bottom padding of the main content area */
+main {
+  padding-bottom: 80px; /* Matches the height of the footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .logo {
       float: none;
       display: block;
       margin: 0 auto;
-    }
-  
-    header nav {
+  }
+
+  header nav {
       float: none;
       display: block;
       text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 10px;
-    }
-  
-    .product-list {
-      flex-direction: column;
-    }
   }
+
+  header nav ul {
+      margin-top: 10px;
+  }
+
+  .product-list {
+      flex-direction: column;
+  }
+}
